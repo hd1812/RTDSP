@@ -1,0 +1,7 @@
+Test seperately, otherwise CPRFRAC is over the maximum
+Do not use compiler optimisation
+1: Voice oscillates when cpu overloads zzz. GUESS:larger background noise: for N>X.noise oscillates
+2: Voice oscillates when cpu overloads zzz. GUESS:larger background noise: for N>X.background noise oscillates
+3: background noise oscillates
+4: 
+5: musical noise, oscillating noise

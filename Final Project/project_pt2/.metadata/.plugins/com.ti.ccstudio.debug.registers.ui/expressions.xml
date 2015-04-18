@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<States>
+<Expressions>
+<Expression IMemento.internal.id="nc">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="lpf_switch">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="lpf_power_switch">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="lpf_N_switch">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="gain_sel">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="oversubtraction">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="lambda">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="cpufrac">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="alpha">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="ratio">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="tau1">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="tau2">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="lpf_weight_speech">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="lpf_weight_noise">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="ratio">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="cabs(buffer[0])">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="N_i[0]">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="lambda">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="alpha1">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="alpha2">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="gain_sel">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="P[0]">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="alpha">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="SNR20">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="SNR">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="add1">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="test">
+<Format/>
+</Expression>
+</Expressions>
+</States>

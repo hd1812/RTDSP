@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<States>
+<Expressions>
+<Expression IMemento.internal.id="buffer[0].r">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="buffer[50].r">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="buffer[0].i">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="buffer[50].i">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="intermediate[0]">
+<Format/>
+</Expression>
+</Expressions>
+</States>
