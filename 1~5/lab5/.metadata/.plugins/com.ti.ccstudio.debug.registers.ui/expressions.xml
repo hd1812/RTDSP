@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<States>
+<Expressions>
+<Expression IMemento.internal.id="a[0]">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="buf[0]">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="w1">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="w2">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="buf[4]">
+<Format/>
+</Expression>
+<Expression IMemento.internal.id="N">
+<Format/>
+</Expression>
+</Expressions>
+</States>

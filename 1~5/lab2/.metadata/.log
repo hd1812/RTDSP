@@ -1,0 +1,688 @@
+!SESSION 2015-01-22 19:26:01.980 -----------------------------------------------
+eclipse.buildId=4.1.3.00038
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-01-22 19:26:11.622
+!MESSAGE A workspace crash was detected. The previous session did not exit normally.
+
+!ENTRY org.eclipse.core.resources 4 2 2015-01-22 19:26:33.195
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.runtime.CoreException: Cannot create file because existing file of wrong type exists: H:\RTDSPlab\lab2\RTDSP\Debug.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:60)
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.mkdir(LocalFile.java:248)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.write(FileSystemResourceManager.java:930)
+	at org.eclipse.core.internal.resources.Folder.internalCreate(Folder.java:170)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:100)
+	at org.eclipse.core.internal.resources.Folder.create(Folder.java:118)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.createDirectory(GnuMakefileGenerator.java:4239)
+	at org.eclipse.cdt.managedbuilder.makegen.gnu.GnuMakefileGenerator.regenerateMakefiles(GnuMakefileGenerator.java:792)
+	at com.ti.ccstudio.managedbuild.core.CCEGnuMakefileGenerator.regenerateMakefiles(CCEGnuMakefileGenerator.java:179)
+	at org.eclipse.cdt.managedbuilder.internal.core.GeneratedMakefileBuilder.fullBuild(GeneratedMakefileBuilder.java:783)
+	at org.eclipse.cdt.managedbuilder.internal.core.GeneratedMakefileBuilder.build(GeneratedMakefileBuilder.java:515)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:603)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:167)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:230)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:233)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:307)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:88)
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.buildForLaunch(AbstractCLaunchDelegate.java:524)
+	at com.ti.ccstudio.debug.core.launch.BaseCCELaunchDelegate.buildForLaunch(BaseCCELaunchDelegate.java:235)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:636)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:583)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:779)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$4.run(DebugUIPlugin.java:835)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:113)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 276 2015-01-22 19:26:33.196
+!MESSAGE Cannot create file because existing file of wrong type exists: H:\RTDSPlab\lab2\RTDSP\Debug.
+!SUBENTRY 1 org.eclipse.core.filesystem 4 276 2015-01-22 19:26:33.196
+!MESSAGE Cannot create file because existing file of wrong type exists: H:\RTDSPlab\lab2\RTDSP\Debug.
+!SESSION 2015-01-23 09:03:06.631 -----------------------------------------------
+eclipse.buildId=4.1.3.00038
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 09:31:11.712
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 09:31:11.715
+!MESSAGE Failed to execute runnable (java.lang.NullPointerException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper$3.run(SolutionHelper.java:700)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 09:32:47.669
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 09:32:47.671
+!MESSAGE Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy.callXPCOMMethod(Native Method)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy$3.call(XPCOMJavaProxy.java:242)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 09:38:09.200
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 09:38:09.204
+!MESSAGE Failed to execute runnable (java.lang.NullPointerException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper$3.run(SolutionHelper.java:700)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 09:40:12.264
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 09:40:12.266
+!MESSAGE Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy.callXPCOMMethod(Native Method)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy$3.call(XPCOMJavaProxy.java:242)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 09:45:24.467
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 09:45:24.471
+!MESSAGE Failed to execute runnable (java.lang.NullPointerException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper$3.run(SolutionHelper.java:700)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 09:46:14.695
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 09:46:14.697
+!MESSAGE Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy.callXPCOMMethod(Native Method)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy$3.call(XPCOMJavaProxy.java:242)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 09:52:03.374
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 09:52:03.378
+!MESSAGE Failed to execute runnable (java.lang.NullPointerException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper$3.run(SolutionHelper.java:700)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 10:08:29.876
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 10:08:29.878
+!MESSAGE Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy.callXPCOMMethod(Native Method)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy$3.call(XPCOMJavaProxy.java:242)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 10:09:28.635
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 10:09:28.637
+!MESSAGE Failed to execute runnable (java.lang.NullPointerException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper$3.run(SolutionHelper.java:700)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 10:11:50.478
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 10:11:50.480
+!MESSAGE Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy.callXPCOMMethod(Native Method)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy$3.call(XPCOMJavaProxy.java:242)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 10:34:31.318
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 10:34:31.322
+!MESSAGE Failed to execute runnable (java.lang.NullPointerException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper$3.run(SolutionHelper.java:700)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 10:35:59.951
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 10:35:59.953
+!MESSAGE Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy.callXPCOMMethod(Native Method)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy$3.call(XPCOMJavaProxy.java:242)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 10:59:31.502
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 10:59:31.505
+!MESSAGE Failed to execute runnable (java.lang.NullPointerException)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.NullPointerException)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper$3.run(SolutionHelper.java:700)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+
+!ENTRY org.eclipse.ui 4 4 2015-01-23 11:00:29.881
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-23 11:00:29.893
+!MESSAGE Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057))
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
+Caused by: org.mozilla.xpcom.XPCOMException: The function "registerViewForRefresh" returned an error condition  (0x80070057)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy.callXPCOMMethod(Native Method)
+	at org.mozilla.xpcom.internal.XPCOMJavaProxy$3.call(XPCOMJavaProxy.java:242)
+	at java.util.concurrent.FutureTask$Sync.innerRun(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(Unknown Source)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.runTask(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+!SESSION 2015-01-26 11:42:16.730 -----------------------------------------------
+eclipse.buildId=4.1.3.00038
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-01-26 11:58:11.471
+!MESSAGE A workspace crash was detected. The previous session did not exit normally.
+
+!ENTRY org.eclipse.core.resources 4 2 2015-01-26 13:54:07.840
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 0
+org.eclipse.swt.SWTException: Device is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.SWT.error(SWT.java:3268)
+	at org.eclipse.swt.widgets.Display.error(Display.java:978)
+	at org.eclipse.swt.widgets.Display.getThread(Display.java:2138)
+	at com.ti.ccstudio.device.setup.DeviceSetupPlugin.inUIThread(DeviceSetupPlugin.java:708)
+	at com.ti.ccstudio.device.setup.DeviceSetupPlugin.getISAFamily(DeviceSetupPlugin.java:378)
+	at com.ti.ccstudio.managedbuild.core.util.ManagedBuildCoreUtils.getISAFamily(ManagedBuildCoreUtils.java:245)
+	at com.ti.ccstudio.managedbuild.core.util.ManagedBuildCoreUtils.getISAFamily(ManagedBuildCoreUtils.java:229)
+	at com.ti.ccstudio.managedbuild.core.ManagedBuildResourceChangeListener.preProcessProject(ManagedBuildResourceChangeListener.java:110)
+	at com.ti.ccstudio.managedbuild.core.ManagedBuildResourceChangeListener.resourceChanged(ManagedBuildResourceChangeListener.java:71)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:284)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:278)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:152)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:240)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:142)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:208)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SESSION 2015-01-26 16:39:38.219 -----------------------------------------------
+eclipse.buildId=4.1.3.00038
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2015-01-26 16:39:41.084
+!MESSAGE A workspace crash was detected. The previous session did not exit normally.
+!SESSION 2015-01-28 13:05:05.717 -----------------------------------------------
+eclipse.buildId=4.1.3.00038
+java.version=1.5.0_14
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_GB
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2015-01-28 13:06:37.338
+!MESSAGE Error: TMS320C671X: Error initializing emulator 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2015-01-28 13:06:50.243
+!MESSAGE Error: TMS320C671X: Error initializing emulator 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2015-01-28 13:08:00.092
+!MESSAGE Error: TMS320C671X: Error initializing emulator 
+
+
+!ENTRY com.ti.ccstudio.debug.core 4 0 2015-01-28 13:09:08.929
+!MESSAGE Error: TMS320C671X: Error initializing emulator 
+
+
+!ENTRY org.eclipse.ui 4 4 2015-01-28 13:11:42.030
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2015-01-28 13:11:42.033
+!MESSAGE java.lang.NullPointerException
+!STACK 0
+java.lang.NullPointerException
+	at com.ti.dvt.util.SolutionHelper.registerEndRefreshForViews(SolutionHelper.java:2389)
+	at com.ti.dvt.graph.visualization.views.GraphPropertiesModalView$3.widgetSelected(GraphPropertiesModalView.java:360)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:90)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1914)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1878)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:419)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:97)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:996)
+	at org.eclipse.core.launcher.Main.main(Main.java:971)
